@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<section id="home">
+    <h1>Je Antik dole?</h1>
+    <div id="status">
+        <strong id="status-short">??</strong>
+        <div id="status-long">Načitavanie...</div>
+    </div>
+</section>
+<section id="help">
+    <h2>Ako to funguje</h2>
+    <p>Všetky dáta na tejto stránke pochádzajú z <a href="http://nat-88-212-48-10.antik.sk/monitoring/">verejného API</a> na monitorovacom serveri Antiku. Táto stránka nieje oficiálnym produktom <a href="https://www.antik.sk/">ANTIK Telecom</a> a všetky dáta sú čisto informačné a poskytované bez akejkoľvek záruky.</p>
+
+    <h2>Podľa čoho sa určuje "Či je antík dole?"</h2>
+    <p>Podľa percentuálnej časti switchov, ktoré sú OFFLINE menej ako 1 mesiac. Za to, že je antik dole sa považuje ak je OFFLINE viac ako <strong>20%</strong> switchov. Ak je ONLINE viac, ako <strong>95%</strong> switchov považuje sa za nie je dole. Inak je Antik možno dole.</p>
+
+    <h2>Cieľ stránky</h2>
+    <p>Cieľom tejto stránky je umožniť klientom antiku zistiť či je v prípade nedostupnosti internetu problém na ich strane alebo na strane antiku. Vzhľadom na to, že týmto spôsobom sa šetri čas ľudí na podpore Antiku nemuseli by to chlapci z antiku zablokovať ❤️</p>
+
+    <h2>Ako zistím, ktorý switch patri k mojej prípojke</h2>
+    <p>Približne sa to dá určiť podľa <strong>hostnamu</strong> konretne z časti medzi pomlčkami. Ta predstavuje skratku názvu ulice a číslo domu. Napríklad pri hostname
+        <i>tv-<b>kom19</b>-sw01</i>je <b>kom19</b> skratka pre <strong>komenského 19</strong></p>
+
+    <h2>Čo znamenajú dáta v tabuľkách</h2>
+    <p>
+        <strong>Stav</strong>:
+        ✔️ - Switch je funkčný,
+        ❌ - Switch je nedostupný,
+        💀 - Switch je dlhodobo nedostupný<br>
+        <strong>Hostname</strong>: Názov daného switchu. Pozostáva z niečoho, skratky ulice a čísla domu, typu zariadenia a jeho ID na danej prípojke.<br>
+        <strong>IP</strong>: Interná IP adresa zariadenia na sieti antiku.<br>
+        <strong>Čas</strong>: Čas od kedy je zariadenie offline alebo kedy bolo naposledy skontrolovane online.<br>
+    </p>
+</section>
+<section id="down">
+    <h1>Switche, ktoré sú Offline</h1>
+    <div id="offline"></div>
+</section>
+<section id="up">
+    <h1>Switche, ktoré sú Online</h1>
+    <div id="online"></div>
+</section>
+<footer>
+    Created by <a href="mailto:padampasam@gmail.com">Peter Adam</a> with ❤. Feel free to <a href="https://github.io">contribute</a>.
+    <a href="mailto:padampasam@gmail.com">Peter Adam</a>
+</footer>
+</body>
+<script src="script.js"></script>
+</html>
