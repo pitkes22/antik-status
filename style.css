@@ -80,3 +80,9 @@ th {
     top: 0;
     background: #fafafa;
 }
+
+footer {
+    text-align: center;
+    height: 2em;
+    line-height: 2em;
+}
