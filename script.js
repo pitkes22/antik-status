@@ -1,5 +1,5 @@
 const ONLINE_THRESHOLD = 95;
-const OFFLINE_THRESHOLD = 20;
+const OFFLINE_THRESHOLD = 50;
 
 const ONLINE_EL = document.getElementById('online');
 const OFFLINE_EL = document.getElementById('offline');
