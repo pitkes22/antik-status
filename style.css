@@ -1,12 +1,12 @@
 h1 {
     font-size: 3em;
     font-weight: 300;
+    margin: 0 10px;
 }
 
 h2 {
     font-size: 2em;
-    margin-bottom: 0em;
-    margin-top: 1.5em;
+    margin: 1.5em 10px 0em;
 }
 
 p {
